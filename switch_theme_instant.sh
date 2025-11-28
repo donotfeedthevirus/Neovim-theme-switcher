@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if [[ $# -ne 1 ]]; then 
+if [[ $# -ne 1 ]]; then
   echo "Usage: $(basename "$0") <theme-name>"
   exit 1
 fi
@@ -10,18 +10,13 @@ theme="$1"
 
 # Map your human-friendly slug -> actual :colorscheme name
 declare -A themes=(
-  ["catppuccin-latte"]="catppuccin-latte"
-  ["catppuccin"]="catppuccin"
   ["everforest"]="everforest"
-  ["flexoki-light"]="flexoki-light"
-  ["gruvbox"]="gruvbox"
+  ["flexoki"]="flexoki"
   ["kanagawa"]="kanagawa"
   ["matte-black"]="matteblack"
-  ["nord"]="nordfox"
   ["osaka-jade"]="bamboo"
   ["ristretto"]="monokai-pro"
-  ["rose-pine"]="rose-pine-dawn"
-  ["tokyo-night"]="tokyonight-night"
+  ["artzen"]="darkrose"
 )
 
 # Per-theme background preference
@@ -39,6 +34,7 @@ declare -A bg=(
   ["ristretto"]="dark"
   ["rose-pine"]="light"
   ["tokyo-night"]="dark"
+  ["artzen"]="dark"
 )
 
 if [[ -z "${themes[$theme]:-}" ]]; then
