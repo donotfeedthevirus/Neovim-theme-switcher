@@ -11,7 +11,7 @@ theme="$1"
 # Map your human-friendly slug -> actual :colorscheme name
 declare -A themes=(
   ["everforest"]="everforest"
-  ["flexoki"]="flexoki"
+  ["flexoki"]="flexoki-light"
   ["kanagawa"]="kanagawa"
   ["matte-black"]="matteblack"
   ["osaka-jade"]="bamboo"
@@ -22,18 +22,12 @@ declare -A themes=(
 # Per-theme background preference
 # Use "light" or "dark" (themes that ignore it won’t break)
 declare -A bg=(
-  ["catppuccin-latte"]="light"
-  ["catppuccin"]="dark"
   ["everforest"]="dark"
-  ["flexoki-light"]="light"
-  ["gruvbox"]="dark"
+  ["flexoki"]="light"
   ["kanagawa"]="dark"
   ["matte-black"]="dark"
-  ["nord"]="dark"
   ["osaka-jade"]="dark"
   ["ristretto"]="dark"
-  ["rose-pine"]="light"
-  ["tokyo-night"]="dark"
   ["artzen"]="dark"
 )
 
