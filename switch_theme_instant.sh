@@ -17,6 +17,7 @@ declare -A themes=(
   ["osaka-jade"]="bamboo"
   ["ristretto"]="monokai-pro"
   ["artzen"]="darkrose"
+  ["pink-blood"]="pixel"
 )
 
 # Per-theme background preference
@@ -29,6 +30,7 @@ declare -A bg=(
   ["osaka-jade"]="dark"
   ["ristretto"]="dark"
   ["artzen"]="dark"
+  ["pink-blood"]="dark"
 )
 
 if [[ -z "${themes[$theme]:-}" ]]; then
